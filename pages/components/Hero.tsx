@@ -20,10 +20,10 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { ChevronRightIcon } from "@heroicons/react/solid";
 
 const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
+  { name: "Vorteile", href: "#" },
+  { name: "Funktionen", href: "#" },
+  { name: "Anbindung", href: "#" },
+  { name: "Kontakt", href: "#" },
 ];
 
 export default function Hero() {
@@ -33,7 +33,7 @@ export default function Hero() {
         <Popover as="header" className="relative">
           {({ open }) => (
             <>
-              <div className="bg-gray-900 pt-6">
+              <div className="bg-wun-900 pt-6">
                 <nav
                   className="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6"
                   aria-label="Global"
@@ -44,12 +44,12 @@ export default function Hero() {
                         <span className="sr-only">Workflow</span>
                         <img
                           className="h-8 w-auto sm:h-10"
-                          src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                          src="/wundera-icon.png"
                           alt=""
                         />
                       </a>
                       <div className="-mr-2 flex items-center md:hidden">
-                        <Popover.Button className="bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white">
+                        <Popover.Button className="bg-wun-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white">
                           <span className="sr-only">Open main menu</span>
                           <MenuIcon className="h-6 w-6" aria-hidden="true" />
                         </Popover.Button>
@@ -78,7 +78,7 @@ export default function Hero() {
                       href="#"
                       className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700"
                     >
-                      Start free trial
+                      Demotermin vereinbaren
                     </a>
                   </div>
                 </nav>
@@ -104,13 +104,13 @@ export default function Hero() {
                       <div>
                         <img
                           className="h-8 w-auto"
-                          src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                          src="/wundera-icon.png"
                           alt=""
                         />
                       </div>
                       <div className="-mr-2">
-                        <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600">
-                          <span className="sr-only">Close menu</span>
+                        <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-wun-600">
+                          <span className="sr-only">Menü schließen</span>
                           <XIcon className="h-6 w-6" aria-hidden="true" />
                         </Popover.Button>
                       </div>
@@ -130,14 +130,14 @@ export default function Hero() {
                       <div className="mt-6 px-5">
                         <a
                           href="#"
-                          className="block text-center w-full py-3 px-4 rounded-md shadow bg-indigo-600 text-white font-medium hover:bg-indigo-700"
+                          className="block text-center w-full py-3 px-4 rounded-md shadow bg-wun-600 text-white font-medium hover:bg-wun-700"
                         >
-                          Start free trial
+                          Demotermin vereinbaren
                         </a>
                       </div>
                       <div className="mt-6 px-5">
                         <p className="text-center text-base font-medium text-gray-500">
-                          Existing customer?{" "}
+                          schon Kunde?
                           <a href="#" className="text-gray-900 hover:underline">
                             Login
                           </a>
@@ -152,7 +152,7 @@ export default function Hero() {
         </Popover>
 
         <main>
-          <div className="pt-10 bg-gray-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
+          <div className="pt-10 bg-wun-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
             <div className="mx-auto max-w-7xl lg:px-8">
               <div className="lg:grid lg:grid-cols-2 lg:gap-8">
                 <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
@@ -161,11 +161,11 @@ export default function Hero() {
                       href="#"
                       className="inline-flex items-center text-white bg-black rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200"
                     >
-                      <span className="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-indigo-500 rounded-full">
-                        We're hiring
+                      <span className="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-wun-500 rounded-full">
+                        Wir stellen ein.
                       </span>
                       <span className="ml-4 text-sm">
-                        Visit our careers page
+                        Schreib uns eine E-mail
                       </span>
                       <ChevronRightIcon
                         className="ml-2 w-5 h-5 text-gray-500"
@@ -173,9 +173,9 @@ export default function Hero() {
                       />
                     </a>
                     <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
-                      <span className="block">A better way to</span>
-                      <span className="block text-indigo-400">
-                        ship web apps
+                      <span className="block">Wunddokumentation</span>
+                      <span className="block text-wun-400">
+                        Pflege. Einfach. Mobil.
                       </span>
                     </h1>
                     <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
@@ -191,19 +191,19 @@ export default function Hero() {
                         <div className="sm:flex">
                           <div className="min-w-0 flex-1">
                             <label htmlFor="email" className="sr-only">
-                              Email address
+                              Email addresse
                             </label>
                             <input
                               id="email"
                               type="email"
                               placeholder="Enter your email"
-                              className="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300 focus:ring-offset-gray-900"
+                              className="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-wun-300 focus:ring-offset-gray-900"
                             />
                           </div>
                           <div className="mt-3 sm:mt-0 sm:ml-3">
                             <button
                               type="submit"
-                              className="block w-full py-3 px-4 rounded-md shadow bg-indigo-500 text-white font-medium hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300 focus:ring-offset-gray-900"
+                              className="block w-full py-3 px-4 rounded-md shadow bg-wun-500 text-white font-medium hover:bg-wun-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-wun-300 focus:ring-offset-gray-900"
                             >
                               Start free trial
                             </button>
@@ -211,7 +211,7 @@ export default function Hero() {
                         </div>
                         <p className="mt-3 text-sm text-gray-300 sm:mt-4">
                           Start your free 14-day trial, no credit card
-                          necessary. By providing your email, you agree to our{" "}
+                          necessary. By providing your email, you agree to our
                           <a href="#" className="font-medium text-white">
                             terms or service
                           </a>
@@ -223,12 +223,16 @@ export default function Hero() {
                 </div>
                 <div className="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
                   <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
-                    {/* Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ */}
-                    <img
-                      className="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                      src="https://tailwindui.com/img/component-images/cloud-illustration-indigo-400.svg"
-                      alt=""
-                    />
+                    <div className="flex align-middle lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none">
+                      <video
+                        className="my-32 lg:block sm:hidden rounded-md"
+                        // poster="/../poster.png"
+                        src="/Video1.mp4"
+                        autoPlay
+                        loop
+                        muted
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
